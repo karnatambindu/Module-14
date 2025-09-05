@@ -1,4 +1,4 @@
-# Exp.No:40 APPLICATIONS OF QUEUE
+# Exp.No:36 APPLICATIONS OF QUEUE
 
 # AIM
 To write a Python program to implement CPU Process Scheduling using a queue.
@@ -97,7 +97,7 @@ if __name__ =="__main__":
 # RESULT
 Thus the Python program to implement CPU Process Scheduling using a queue has been implemented and executed successfully.
 
-# Exp No: 36 Circular Queue
+# Exp No: 37 Circular Queue
 
 # AIM
 To write a Python program with a function to insert float values into a Circular Queue.
@@ -149,7 +149,7 @@ size=int(input()) a=Queue(size) str=float(input()) str1=float(input()) str2=floa
 # RESULT
 Thus the Python program with a function to insert float values into a Circular Queue has been implemented and executed successfully
 
-# Exp.No:39 DEQUE - INSERTION
+# Exp.No:38 DEQUE - INSERTION
 # AIM
 To write a Python program to insert elements at REAR END of deque using a collection built-in function.
 
@@ -182,7 +182,7 @@ print(de)
 # RESULT
 Thus the Python program to insert elements at REAR END of deque using a collection built-in function has been implemented and executed successfully.
 
-# Exp.No:38 Deque - DELETION
+# Exp.No:39 Deque - DELETION
 # AIM
 To write a Python program to delete elements at FRONT END of deque using a collection built-in function.
 
@@ -216,7 +216,7 @@ print (de)
 # RESULT
 Thus the Python program to delete elements at FRONT END of deque using a collection built-in function has been implemented and executed successfully.
 
-# Exp.No:37 PRIORITY QUEUE
+# Exp.No:40 PRIORITY QUEUE
 # AIM
 To write a Python program for simple implementation of Priority Queue using Queue.
 
