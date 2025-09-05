@@ -10,17 +10,27 @@ Define the function CalculateWaitingTime(at, bt, N).
 Initialize a list wt of size N with all values set to 0.
 
 Set wt[0] = 0 for the first process.
+
 Print the table header: "P.No.", "Arrival Time", "Burst Time", "Waiting Time".
+
 Print the values for the first process.
+
 For each process from index 1 to N-1:
+
 Calculate wt[i] = (at[i - 1] + bt[i - 1] + wt[i - 1]) - at[i].
+
 Print the process number, arrival time, burst time, and waiting time.
+
 Initialize total_waiting_time = 0.
+
 Add up all waiting times.
+
 Calculate average waiting time as average = total_waiting_time / N.
 Print the average waiting time.
+
 Get burst times as input from the user for 5 processes.
 Call CalculateWaitingTime() with at, bt, and N.
+
 End the program.
 # PROGRAM
 ```
@@ -106,14 +116,14 @@ To write a Python program with a function to insert float values into a Circular
 
 # ALGORITHM
 Start
-Check if the Circular Queue is full
-If size == max_size, print "Queue is full" and exit the function
-If the queue is not full:
-Read the element to be inserted
-Convert it to float
-Insert the element at the tail position
-Update tail using: tail = (tail + 1) % max_size (circular increment)
-Increment size by 1
+1. Check if the Circular Queue is full
+2 If size == max_size, print "Queue is full" and exit the function
+3 If the queue is not full:
+4 Read the element to be inserted
+5 Convert it to float
+6 Insert the element at the tail position
+7 Update tail using: tail = (tail + 1) % max_size (circular increment)
+8 Increment size by 1
 End
 # PROGRAM
 ```
