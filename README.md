@@ -117,13 +117,20 @@ To write a Python program with a function to insert float values into a Circular
 # ALGORITHM
 Start
 1. Check if the Circular Queue is full
+
 2 If size == max_size, print "Queue is full" and exit the function
+
 3 If the queue is not full:
+
 4 Read the element to be inserted
+
 5 Convert it to float
+
 6 Insert the element at the tail position
+
 7 Update tail using: tail = (tail + 1) % max_size (circular increment)
 8 Increment size by 1
+
 End
 # PROGRAM
 ```
@@ -169,12 +176,16 @@ To write a Python program to insert elements at REAR END of deque using a collec
 
 Import the deque class from the collections module.
 Initialize an empty deque.
+
 Start an infinite loop using while True.
 In each iteration, take input from the user.
+
 If the input is an empty string, break the loop.
 If the input is not empty, convert it to an integer and append it to the deque.
+
 After the loop ends, append the values 14 and 15 to the deque.
 Print the message "The deque after appending at right is :".
+
 Print the contents of the deque.
 # PROGRAM
 ```
@@ -202,10 +213,13 @@ To write a Python program to delete elements at FRONT END of deque using a colle
 
 Import the deque class from the collections module.
 Create an empty deque.
+
 Define how many elements to input (e.g., 3 inputs as in the example).
 Loop through the range of input size:
+
 Read an integer from the user.
 Append the integer to the deque.
+
 Remove the front element of the deque using popleft().
 Print the final deque after deletion.
 # PROGRAM
@@ -235,16 +249,22 @@ To write a Python program for simple implementation of Priority Queue using Queu
 # ALGORITHM
 Start the program.
 Define a class PriorityQueue with an initializer to create an empty list queue.
+
 Define the __str__ method to return queue elements as a string separated by spaces.
+
 Define the isEmpty() method to check if the queue is empty.
 Define the insert(data) method to append the given data to the queue.
+
 Define the delete() method to:
 Initialize max_val as 0.
+
 Loop through the queue and find the index of the maximum value.
 Delete and return the element at that index.
+
 In the main code, take integer input n for number of elements.
 Loop n times to take input values and insert them into the priority queue.
 Print the contents of the queue.
+
 While the queue is not empty, call delete() and print each returned element.
 End the program.
 
