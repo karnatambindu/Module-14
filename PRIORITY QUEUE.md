@@ -1,12 +1,7 @@
-# Exp.No:37  
-## PRIORITY QUEUE
-
----
+# Exp.No:14E  PRIORITY QUEUE
 
 ### AIM  
 To write a Python program for simple implementation of Priority Queue using Queue.
-
----
 
 ### ALGORITHM
 
@@ -25,13 +20,54 @@ To write a Python program for simple implementation of Priority Queue using Queu
 10. While the queue is not empty, call `delete()` and print each returned element.  
 11. End the program.
 
----
-
 ### PROGRAM
 
 ```
+# A simple implementation of Priority Queue
+# using Queue.
+class PriorityQueue(object):
+	def __init__(self):
+		self.queue = []
+
+	def __str__(self):
+		return ' '.join([str(i) for i in self.queue])
+
+	# for checking if the queue is empty
+	def isEmpty(self):
+		return len(self.queue) == 0
+
+	# for inserting an element in the queue
+	def insert(self, data):
+		self.queue.append(data)
+
+	# for popping an element based on Priority
+	def delete(self):
+	    try:
+	        max_val=0
+	        for i in range(len(self.queue)):
+	            if self.queue[i]>self.queue[max_val]:
+	                max_val = i
+	        item = self.queue[max_val]
+	        del self.queue[max_val]
+	        return item
+	    except IndexError:
+	        print()
+	        exit()
+	   
+
+myQueue = PriorityQueue()
+n=int(input())	
+for i in range(0, n):
+    ele = int(input())
+    myQueue.insert(ele)
+	
+print(myQueue)		
+while not myQueue.isEmpty():
+	print(myQueue.delete())
 ```
 
 ### OUTPUT
+<img width="1195" height="452" alt="image" src="https://github.com/user-attachments/assets/a55a67b1-b2eb-4219-a90a-0bbc117cf786" />
 
 ### RESULT
+Thus the Python program for simple implementation of Priority Queue using Queue has been implemented and executed successfully.
